@@ -30,7 +30,7 @@
   </style>
 </head>
 <body> 
-  <h1>Emma</h1>
+  <h1 id="test">Emma</h1>
   <script>
     
     const urlSearchParams = new URLSearchParams(window.location.search);
@@ -46,7 +46,7 @@
     }
 
     theImage.src = isValidURL( params.url )  ? params.url : "user.png"
-    document.body.insertBefore(theImage, body.firstChild);
+    document.body.insertBefore(theImage, body.test);
     
   </script> 
 </body>
