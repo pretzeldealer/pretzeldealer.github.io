@@ -24,7 +24,7 @@
   img{ 
     height: 95vh;   
     object-fit: cover;
-    border: 10px solid #000000;
+    border: 1px solid #000000;
   }
 
 
@@ -47,8 +47,7 @@
     }
 
     theImage.src = isValidURL( params.url )  ? params.url : "user.png"
-    body.insertBefore(theImage, body.firstChild);
-    //document.body.appendChild(theImage)
+    document.body.appendChild(theImage)
     
   </script> 
 </body>
