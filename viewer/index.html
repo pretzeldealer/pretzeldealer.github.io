@@ -47,7 +47,8 @@
     }
 
     theImage.src = isValidURL( params.url )  ? params.url : "user.png"
-    document.body.appendChild(theImage)
+    body.insertBefore(theImage, body.firstChild);
+    //document.body.appendChild(theImage)
     
   </script> 
 </body>
